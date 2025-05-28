@@ -120,28 +120,34 @@
             max-width: 100%;
         }
 
-        /* --- FOOTER --- */
-        .footer-info {
-            background-color: #003366;
-            color: white;
-            font-size: 0.8em;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            z-index: 1000;
-            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            box-sizing: border-box;
-            text-align: center;
-        }
-        .footer-info p {
-            margin: 2px 0;
-        }
+/* Restablecer márgenes y paddings predeterminados para el body */
+body {
+    margin: 0;
+    padding: 0;
+}
 
+/* --- FOOTER --- */
+.footer-info {
+    background-color: #003366;
+    color: white;
+    font-size: 0.8em;
+    padding: 15px;
+    position: fixed;
+    width: 100%; /* Ocupa el 100% del ancho del viewport */
+    left: 0;     /* Asegura que no haya espacio a la izquierda */
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+.footer-info p {
+    margin: 2px 0;
+}
         .justificacion-extranjera ul {
             list-style-type: none;
             padding-left: 0;
